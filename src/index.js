@@ -12,6 +12,15 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1.2;
   }
+  .container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 `;
 
 ReactDOM.render(

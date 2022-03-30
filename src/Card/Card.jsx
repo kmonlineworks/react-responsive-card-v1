@@ -8,6 +8,7 @@ import {
 } from './CardStyle';
 
 function Card({ products }) {
+	console.log(products);
 	if (products.description.length > 50) {
 		products.description = products.description.substring(0, 50) + '...';
 	}
