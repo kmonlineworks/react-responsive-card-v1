@@ -20,6 +20,13 @@ const GlobalStyle = createGlobalStyle`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+
+    @media only screen and (max-width: 768px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 580px){
+      grid-template-columns: 1fr;
+    }
   }
 `;
 
